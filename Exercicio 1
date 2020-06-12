@@ -1,0 +1,24 @@
+#include  <stdio.h>
+#include  <stdlib.h>
+#include  <math.h>
+
+int  main ()
+{
+  int x, y, pot;
+  printf("Digite o valor x: ");
+  scanf ("%d", &x);
+  if (x > 0 )
+  { 
+    for (y = 0 ; y <= 10 ; y++)
+    {
+     pot = pow (x, y);
+     printf ("%d  \n", pot);
+    }
+  }
+  else
+  {
+    
+    printf ("\n ERROR: (Digite um valor inteiro positivo!) ");
+  }
+  return 0 ;
+}
