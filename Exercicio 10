@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main ()
+{
+  int veic, max;
+  printf("Digite a velocidade do veículo: ");
+  scanf("%d", &veic);
+  printf("Digite a velocidade máxima permitida na via: ");
+  scanf("%d", &max);
+ 
+  if(veic<=max)
+  {
+    printf("\nNão houve multa");
+  }
+  
+  if(veic>max && veic < max*1.2)
+  { 
+    printf("\nMulta de R$85,13");
+  }
+  
+  if(veic>=max*1.2 && veic < max*1.5)
+  {
+    printf("(\nMulta de R$127,69)");
+  }
+  
+  if(veic>=max*1.5)
+  {
+    printf("\nMulta de R$574,62");
+  }
+  
+  return 0;
+}  
