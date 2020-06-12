@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main() 
+{
+    int n1,n2,cont;
+    printf("Digite um número: ");
+    scanf("%d",&n1);
+    printf("Digite outro número: ");
+    scanf("%d",&n2);
+    if(n1>0 && n2>0)
+    {
+      for(cont=n1;cont<=n2;cont++)
+      {
+        printf("\n%d",cont);
+      }
+    }
+    else 
+    {
+      
+      printf("\nERROR: Digite valores inteiros positivos");
+ 
+    }  
+  return 0;
+}
