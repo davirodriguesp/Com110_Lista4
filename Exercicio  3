@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main()
+{
+  int esc;
+  do
+  {
+    printf("Escolha 1: digite(1) \n");
+    printf("Escolha 2: digite(2) \n");
+    printf("Escolha 3: digite(3) \n");
+    printf("\n");
+    scanf("%d",&esc);
+ 
+  } while (esc!=1 && esc!=2 && esc!=3); 
+    printf("\nObrigado pela escolha!"); 
+
+  return 0;
+} 
