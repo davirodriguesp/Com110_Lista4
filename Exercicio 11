@@ -1,0 +1,41 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() 
+{  
+  int id,dia,mes,ano,dia_nasc,mes_nasc,ano_nasc;
+  
+  printf("Informe o dia em que você nasceu: ");
+  scanf("%d",&dia_nasc);  
+   printf("Informe o mês em que nasceu: ");
+  scanf("%d",&mes_nasc);  
+   printf("Informe o ano em que nasceu: ");
+  scanf("%d",&ano_nasc);
+  printf("\nDia atual: ");
+  scanf("%d",&dia);  
+   printf("Mes atual: ");
+  scanf("%d",&mes);  
+   printf("Ano atual: ");
+  scanf("%d",&ano);  
+  
+  if(mes>mes_nasc)
+  {
+    id=ano-ano_nasc;
+  }
+  if(mes<mes_nasc)
+  {
+    id=ano-ano_nasc-1;
+  }
+  if(mes==mes_nasc && dia<dia_nasc)
+  {
+    id=ano-ano_nasc-1;
+  } 
+  if(mes==mes_nasc && dia>=dia_nasc)
+  {
+    id=ano-ano_nasc;
+  }
+  
+  printf("\nSua idade é: %d", id);
+
+    return 0;
+}
