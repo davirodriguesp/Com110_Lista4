@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() 
+{
+  int hora;
+  printf("Digite o horário atual: ");
+  scanf("%d",&hora);
+  if (hora>=5 && hora<=11)     
+  {
+    printf("\nManhã");
+  }
+  if (hora>11 && hora<=17)
+  {
+    printf("\nTarde");
+  }
+  if (hora > 17 || hora <=4)
+  {
+    printf("\nNoite");
+  }
+  
+  return 0;
+}
