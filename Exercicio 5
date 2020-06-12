@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main() 
+{
+  int x,seg;
+  printf("Digite os Minutos: ");
+  
+  scanf("%d",&x);
+  seg=x*60;
+  printf("\n");
+  printf("%d Minutos tem %d Segundos!", x, seg );
+
+  return 0 ;
+} 
